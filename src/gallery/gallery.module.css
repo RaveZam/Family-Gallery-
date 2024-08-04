@@ -1,8 +1,18 @@
-.gallery {
-  width: 100vw;
-  height: 100vh;
+.image {
+  width: 300px;
+
+  flex-grow: 1; /* Allow images to grow to fill available space */
 }
 
-.image {
-  width: 500px;
+.images {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  /* justify-content: center; */
+}
+
+.gallery {
+  margin-top: 20px;
 }
