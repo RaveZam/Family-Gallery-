@@ -1,0 +1,20 @@
+.navbar {
+  width: 50%;
+}
+
+.ul {
+  padding-top: 10px;
+  justify-content: center;
+  list-style-type: none;
+  display: flex;
+}
+
+.li {
+  font-size: 35px;
+  margin: 20px;
+  transition: all 0.3s;
+}
+.li:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}

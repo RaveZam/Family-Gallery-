@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  font-weight: bold;
+  width: 100%;
+  height: 100px;
+  background-color: #faf9f6;
+}
+
+.name {
+  font-size: 40px;
+  width: 40%;
+  padding-left: 150px;
+  padding-top: 30px;
+}
