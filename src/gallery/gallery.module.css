@@ -2,10 +2,12 @@ img {
   max-width: 100%;
   max-height: 90%;
   margin: 10px;
+  transition: all 0.2s ease-in-out;
 }
 
 img:hover {
-  box-shadow: 0 16px 8px rgba(0, 0, 0, 0.5);
+  transform: scale(1.01);
+  box-shadow: 0 12px 8px rgba(0, 0, 0, 0.5);
 }
 
 .column {
@@ -17,8 +19,13 @@ img:hover {
   display: flex;
   padding: 10px;
 }
-/* @media (max-width: 768px) {
-  .image {
-    width: 160px;
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
   }
-} */
+
+  img {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}

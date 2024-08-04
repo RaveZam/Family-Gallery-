@@ -31,8 +31,8 @@ export default function Gallery() {
             <a href="./images/image3.jpg">
               <img alt="img3" src="./images/image3.jpg" />
             </a>
-            <a href="./images/image4.jpg">
-              <img alt="img4" src="./images/image4.jpg" />
+            <a href="./images/image3.jpg">
+              <img alt="img3" src="./images/image3.jpg" />
             </a>
           </LightGallery>
         </div>
@@ -48,8 +48,12 @@ export default function Gallery() {
             <a href="./images/image6.jpg">
               <img alt="img6" src="./images/image6.jpg" />
             </a>
-            <a href="./images/image7.jpg">
-              <img alt="img7" src="./images/image7.jpg" />
+            <a href="./images/image3.jpg">
+              <img alt="img3" src="./images/image3.jpg" />
+            </a>
+
+            <a href="./images/image4.jpg">
+              <img alt="img4" src="./images/image4.jpg" />
             </a>
           </LightGallery>
         </div>
@@ -67,6 +71,9 @@ export default function Gallery() {
             </a>
             <a href="./images/image10.jpg">
               <img alt="img10" src="./images/image10.jpg" />
+            </a>
+            <a href="./images/image7.jpg">
+              <img alt="img7" src="./images/image7.jpg" />
             </a>
           </LightGallery>
         </div>
