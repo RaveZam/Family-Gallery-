@@ -4,5 +4,6 @@
 }
 
 body {
-  font-family: "inter";
+  font-family: Inter;
+  overflow-x: hidden; /* Hides vertical scroll */
 }
