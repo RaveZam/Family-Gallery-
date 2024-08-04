@@ -12,3 +12,11 @@
   padding-left: 150px;
   padding-top: 30px;
 }
+
+@media (max-width: 768px) {
+  .name {
+    font-size: 25px;
+    padding-left: 25px;
+    padding-top: 30px;
+  }
+}
