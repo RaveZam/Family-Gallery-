@@ -23,16 +23,32 @@ export default function Gallery() {
             plugins={[lgThumbnail, lgZoom]}
           >
             <a href="./images/image1.jpg">
-              <img alt="img1" src="./images/image1.jpg" />
+              <img
+                className={styles.image}
+                alt="img1"
+                src="./images/image1.jpg"
+              />
             </a>
             <a href="./images/image2.jpg">
-              <img alt="img2" src="./images/image2.jpg" />
+              <img
+                className={styles.image}
+                alt="img2"
+                src="./images/image2.jpg"
+              />
             </a>
             <a href="./images/image3.jpg">
-              <img alt="img3" src="./images/image3.jpg" />
+              <img
+                className={styles.image}
+                alt="img3"
+                src="./images/image3.jpg"
+              />
             </a>
             <a href="./images/image3.jpg">
-              <img alt="img3" src="./images/image3.jpg" />
+              <img
+                className={styles.image}
+                alt="img3"
+                src="./images/image3.jpg"
+              />
             </a>
           </LightGallery>
         </div>
@@ -43,17 +59,33 @@ export default function Gallery() {
             plugins={[lgThumbnail, lgZoom]}
           >
             <a href="./images/image5.jpg">
-              <img alt="img5" src="./images/image5.jpg" />
+              <img
+                className={styles.image}
+                alt="img5"
+                src="./images/image5.jpg"
+              />
             </a>
             <a href="./images/image6.jpg">
-              <img alt="img6" src="./images/image6.jpg" />
+              <img
+                className={styles.image}
+                alt="img6"
+                src="./images/image6.jpg"
+              />
             </a>
             <a href="./images/image3.jpg">
-              <img alt="img3" src="./images/image3.jpg" />
+              <img
+                className={styles.image}
+                alt="img3"
+                src="./images/image3.jpg"
+              />
             </a>
 
             <a href="./images/image4.jpg">
-              <img alt="img4" src="./images/image4.jpg" />
+              <img
+                className={styles.image}
+                alt="img4"
+                src="./images/image4.jpg"
+              />
             </a>
           </LightGallery>
         </div>
@@ -64,16 +96,32 @@ export default function Gallery() {
             plugins={[lgThumbnail, lgZoom]}
           >
             <a href="./images/image8.jpg">
-              <img alt="img8" src="./images/image8.jpg" />
+              <img
+                className={styles.image}
+                alt="img8"
+                src="./images/image8.jpg"
+              />
             </a>
             <a href="./images/image9.jpg">
-              <img alt="img9" src="./images/image9.jpg" />
+              <img
+                className={styles.image}
+                alt="img9"
+                src="./images/image9.jpg"
+              />
             </a>
             <a href="./images/image10.jpg">
-              <img alt="img10" src="./images/image10.jpg" />
+              <img
+                className={styles.image}
+                alt="img10"
+                src="./images/image10.jpg"
+              />
             </a>
             <a href="./images/image7.jpg">
-              <img alt="img7" src="./images/image7.jpg" />
+              <img
+                className={styles.image}
+                alt="img7"
+                src="./images/image7.jpg"
+              />
             </a>
           </LightGallery>
         </div>

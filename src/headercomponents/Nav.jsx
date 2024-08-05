@@ -2,7 +2,11 @@ import styles from "./modules/nav.module.css";
 function click() {
   console.log("Hello");
 }
-export default function Nav() {
+
+export default function Nav({ show, setShow }) {
+  function burgerclick() {
+    setShow(!show);
+  }
   return (
     <div className={styles.navbar}>
       <ul className={styles.ul}>
@@ -12,6 +16,12 @@ export default function Nav() {
         <li className={styles.li}>Contact Me</li>
         <li className={styles.li}>About Me</li>
       </ul>
+      <img
+        onClick={() => burgerclick()}
+        className={styles.burger}
+        src="./images/hamburger.png"
+        alt="burger"
+      />
     </div>
   );
 }

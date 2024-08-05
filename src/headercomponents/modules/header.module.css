@@ -5,6 +5,9 @@
   height: 100px;
   background-color: #faf9f6;
   box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.097);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .name {
@@ -17,7 +20,10 @@
 @media (max-width: 768px) {
   .name {
     font-size: 25px;
-    padding-left: 25px;
+    padding-left: 2rem;
     padding-top: 30px;
   }
+}
+
+.scrolled {
 }

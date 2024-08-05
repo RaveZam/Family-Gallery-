@@ -1,0 +1,36 @@
+.mobnav {
+  position: absolute;
+  background-color: #fdffff;
+  width: 100%;
+  height: 20rem;
+  box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.ul {
+  padding-top: 3.5rem;
+  list-style-type: none;
+}
+
+.li {
+  font-size: 2.3rem;
+  margin: 15px;
+  padding-bottom: 5px;
+  border-bottom: solid black 1px;
+}
+
+.linkscontainer {
+  margin: 0 auto;
+  width: 70%;
+  height: 100%;
+  text-align: center;
+}

@@ -19,8 +19,20 @@
   cursor: pointer;
 }
 
+.burger {
+  display: none;
+  width: 50px;
+  float: right;
+  margin-top: 1.5rem;
+  margin-right: 0.8rem;
+}
+
 @media (max-width: 768px) {
   .ul {
     display: none;
+  }
+
+  .burger {
+    display: block;
   }
 }
