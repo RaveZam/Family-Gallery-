@@ -1,6 +1,10 @@
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: url("./images/image2.jpg");
+}
+
+.herobg {
+  max-width: 100vw;
+  max-height: 100vh;
   background-size: cover;
 }
