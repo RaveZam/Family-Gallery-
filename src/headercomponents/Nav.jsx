@@ -13,7 +13,7 @@ export default function Nav({ show, setShow }) {
         <li onClick={() => click()} className={styles.li}>
           Gallery
         </li>
-        <li className={styles.li}>Contact Me</li>
+        <li className={styles.li}>Contact</li>
         <li className={styles.li}>About Me</li>
       </ul>
       <img
