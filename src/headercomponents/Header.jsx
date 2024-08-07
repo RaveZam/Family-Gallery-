@@ -6,7 +6,9 @@ export default function Header() {
   const [show, setShow] = useState(false);
   return (
     <div className={styles.header}>
-      <h1 className={styles.name}>IVAN PINTO</h1>
+      <div className={styles.namecontainer}>
+        <h1 className={styles.name}>IVAN PINTO</h1>
+      </div>
       <Nav show={show} setShow={setShow} />
       <Mobilenav show={show} />
     </div>

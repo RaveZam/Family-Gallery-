@@ -1,21 +1,29 @@
 .navbar {
-  width: 50%;
+  display: flex;
+  justify-content: end;
+  width: 35%;
+  float: right;
+  white-space: nowrap;
+  margin-right: 5%;
 }
 
 .ul {
-  justify-content: center;
+  padding-top: 2%;
   list-style-type: none;
   display: flex;
 }
 
 .li {
-  font-size: 35px;
-  margin: 20px;
-  transition: all 0.3s;
+  font-weight: 600;
+  font-size: 25px;
+  padding: 5px;
+  margin-left: 20px;
+  transition: all 0.4s ease-in-out;
 }
 .li:hover {
-  transform: translateY(-10px);
+  transform: translateY(-6px);
   cursor: pointer;
+  border-bottom: solid rgba(70, 63, 63, 0.403) 2px;
 }
 
 .burger {
