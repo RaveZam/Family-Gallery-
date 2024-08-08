@@ -1,4 +1,5 @@
 import LightGallery from "lightgallery/react";
+import { useInView } from "react-hook-inview";
 import styles from "./gallery.module.css";
 // import styles
 import "lightgallery/css/lightgallery.css";
@@ -13,8 +14,18 @@ export default function Gallery() {
   const onInit = () => {
     console.log("lightGallery has been initialized");
   };
+
+  const [ref, isVisible] = useInView({
+    threshold: 1,
+  });
+
   return (
-    <div className="App">
+    <div className={styles.app}>
+      {/* <div className={styles.gdiv}>
+        <h1 className={styles.galleryh1}>
+          <em> We Captured </em> It
+        </h1>
+      </div> */}
       <div className={styles.gallery}>
         <div className={styles.column}>
           <LightGallery
@@ -22,6 +33,14 @@ export default function Gallery() {
             speed={500}
             plugins={[lgThumbnail, lgZoom]}
           >
+            <a ref={ref} href="./images/image2.jpg">
+              <img
+                className={styles.image}
+                alt="img2"
+                src="./images/image2.jpg"
+              />
+              {console.log(isVisible ? "I Am Visible!" : "Im Gone bish")}
+            </a>
             <a href="./images/image1.jpg">
               <img
                 className={styles.image}
@@ -29,25 +48,18 @@ export default function Gallery() {
                 src="./images/image1.jpg"
               />
             </a>
-            <a href="./images/image2.jpg">
+            <a href="./images/image7.jpg">
               <img
                 className={styles.image}
-                alt="img2"
-                src="./images/image2.jpg"
+                alt="img7"
+                src="./images/image7.jpg"
               />
             </a>
-            <a href="./images/image3.jpg">
+            <a href="./images/image8.jpg">
               <img
                 className={styles.image}
-                alt="img3"
-                src="./images/image3.jpg"
-              />
-            </a>
-            <a href="./images/image3.jpg">
-              <img
-                className={styles.image}
-                alt="img3"
-                src="./images/image3.jpg"
+                alt="img8"
+                src="./images/image8.jpg"
               />
             </a>
           </LightGallery>

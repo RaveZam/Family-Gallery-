@@ -3,22 +3,35 @@
   max-height: 90%;
   margin: 10px;
   transition: all 0.15s ease-in-out;
+  /* box-shadow: 0 12px 8px rgba(0, 0, 0, 0.5); */
+  border-radius: 15px;
 }
 
 .image:hover {
-  transform: scale(1.01);
-  box-shadow: 0 12px 8px rgba(0, 0, 0, 0.5);
+  /* transform: scale(1.01); */
 }
 
 .column {
   margin: 10px;
 }
+.app {
+  margin-top: 20%;
+}
 .gallery {
   margin: 0 auto;
-  margin-top: 400px;
-  width: 90%;
+  width: 98%;
   display: flex;
-  padding: 10px;
+  /* padding: 20px; */
+}
+
+.gdiv {
+  width: 90%;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.galleryh1 {
+  font-size: 5rem;
 }
 @media (max-width: 768px) {
   .gallery {
