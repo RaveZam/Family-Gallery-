@@ -1,6 +1,10 @@
 import styles from "./hero.module.css";
+import { useInView } from "react-intersection-observer";
 
 export default function Hero() {
+  const [ref, inView] = useInView({
+    threshold: 0,
+  });
   return (
     <div className={styles.hero}>
       <img className={styles.herobg} src="./images/image9.jpg" alt="" />
