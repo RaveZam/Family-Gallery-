@@ -1,19 +1,19 @@
-import { useState } from "react";
+import React, { Suspense, lazy } from "react";
 import "./App.css";
 import Hero from "./hero/Hero";
-import Gallery from "./gallery/Gallery";
+// import Gallery from "./gallery/Gallery";
+const Gallery = lazy(() => import("./gallery/Gallery"));
 import Header from "./headercomponents/Header";
 
 function App() {
-  const [isHeroLoaded, setIsHeroLoaded] = useState(false);
-
   return (
     <div>
       <Header />
-      {console.log(isHeroLoaded)}
-      <Hero onLoad={() => setIsHeroLoaded(true)} />
+      <Hero />
       {/* <Landingpage /> */}
-      {isHeroLoaded ? <Gallery /> : ""}
+      <Suspense>
+        <Gallery />
+      </Suspense>
     </div>
   );
 }
