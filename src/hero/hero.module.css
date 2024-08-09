@@ -11,8 +11,8 @@
   /* box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.466); */
   position: relative;
   transform-style: preserve-3d;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  /* border-bottom-left-radius: 20px; */
+  /* border-bottom-right-radius: 20px; */
 }
 
 .herotxtcontainer {
