@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import "./App.css";
 import Hero from "./hero/Hero";
+import { useRef } from "react";
 // import Gallery from "./gallery/Gallery";
 const Gallery = lazy(() => import("./gallery/Gallery"));
 import Header from "./headercomponents/Header";

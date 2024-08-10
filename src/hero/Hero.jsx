@@ -1,11 +1,19 @@
 import styles from "./hero.module.css";
 import { useInView } from "react-intersection-observer";
+import { animateScroll } from "react-scroll";
 
 export default function Hero() {
-  const [ref, inView] = useInView({
-    threshold: 0,
-  });
-  //
+  // const [ref, inView] = useInView({
+  //   threshold: 0,
+  // });
+  const options = {
+    // Your options here, for example:
+    duration: 500,
+    smooth: true,
+  };
+  function toGallery() {
+    animateScroll.scrollTo(800, options);
+  }
   return (
     <div
       className={styles.hero}
@@ -18,7 +26,12 @@ export default function Hero() {
           everyday adventures, our gallery captures the essence of our family's
           journey.
         </p>
-        <button className={`${styles.btn} ${styles.btn1}`}>View Gallery</button>
+        <button
+          onClick={() => toGallery()}
+          className={`${styles.btn} ${styles.btn1}`}
+        >
+          View Gallery
+        </button>
       </div>
     </div>
   );
