@@ -22,17 +22,17 @@ export default function Gallery() {
   });
   const [ref2, isVisible2] = useInView({
     threshold: 1,
-    rootMargin: "400px",
+    // rootMargin: "400px",
     triggerOnce: true,
   });
   const [ref3, isVisible3] = useInView({
     threshold: 1,
-    rootMargin: "400px",
+    // rootMargin: "400px",
     triggerOnce: true,
   });
   const [ref4, isVisible4] = useInView({
     threshold: 1,
-    rootMargin: "400px",
+    // rootMargin: "400px",
     triggerOnce: true,
   });
 
