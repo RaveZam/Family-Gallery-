@@ -14,7 +14,7 @@ export default function Nav({ show, setShow }) {
           Gallery
         </li>
         <li className={styles.li}>Contact</li>
-        <li className={styles.li}>About Me</li>
+        <li className={styles.li}>About Us</li>
       </ul>
       <img
         onClick={() => burgerclick()}

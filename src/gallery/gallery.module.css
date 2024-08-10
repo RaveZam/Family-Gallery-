@@ -57,20 +57,12 @@
 .img7 {
   transition-delay: 400ms;
 }
-.app {
-  margin-top: 2%;
-}
+
 .gallery {
   margin: 0 auto;
   width: 98%;
   display: flex;
   /* padding: 20px; */
-}
-
-.gdiv {
-  width: 90%;
-  margin: 0 auto;
-  text-align: right;
 }
 
 .galleryh1 {

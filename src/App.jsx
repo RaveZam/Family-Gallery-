@@ -10,7 +10,6 @@ function App() {
     <div>
       <Header />
       <Hero />
-      {/* <Landingpage /> */}
       <Suspense>
         <Gallery />
       </Suspense>

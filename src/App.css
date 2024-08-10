@@ -4,19 +4,9 @@
 }
 
 html {
-  /* height: auto;
-  overflow: hidden; */
 }
 body {
   font-family: Inter;
-  overflow-x: hidden; /* Hides vertical scroll */
-  /* perspective: 1px;
-  transform-style: preserve-3d;
-  overflow-y: scroll;
-  overflow-x: hidden; */
   scroll-behavior: smooth;
   background-color: #fff5ed;
-}
-
-@media (max-width: 768px) {
 }
