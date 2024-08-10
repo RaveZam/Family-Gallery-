@@ -5,9 +5,12 @@ export default function Hero() {
   const [ref, inView] = useInView({
     threshold: 0,
   });
-  // ./images/image9.jpg
+  //
   return (
-    <div className={styles.hero}>
+    <div
+      className={styles.hero}
+      style={{ backgroundImage: `url('./images/image9.jpg')` }}
+    >
       <div className={styles.herotxtcontainer}>
         <h1 className={styles.herotxt}>A Journey Through Our Life in Photos</h1>
         <p className={styles.herospan}>
