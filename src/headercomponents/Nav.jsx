@@ -7,10 +7,17 @@ export default function Nav({ show, setShow }) {
   function burgerclick() {
     setShow(!show);
   }
+  const scrollPosition = window.innerHeight * 1.2;
+  function scrollToGallery() {
+    window.scrollTo({
+      top: scrollPosition,
+      behavior: "smooth",
+    });
+  }
   return (
     <div className={styles.navbar}>
       <ul className={styles.ul}>
-        <li onClick={() => click()} className={styles.li}>
+        <li onClick={() => scrollToGallery()} className={styles.li}>
           Gallery
         </li>
         <li className={styles.li}>Contact</li>

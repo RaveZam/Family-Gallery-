@@ -7,12 +7,22 @@ const Gallery = lazy(() => import("./gallery/Gallery"));
 import Header from "./headercomponents/Header";
 
 function App() {
+  const myComponentRef = useRef(null);
+
+  const scrollToGallery = () => {
+    console.log("clicked");
+    myComponentRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div>
       <Header />
-      <Hero />
+      <Hero scrollToGallery={scrollToGallery} />
       <Suspense>
-        <Gallery />
+        <div ref={myComponentRef}>
+          <Gallery />
+        </div>
+        {/* ref={galleryRef} */}
       </Suspense>
     </div>
   );

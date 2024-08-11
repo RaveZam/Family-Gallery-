@@ -47,6 +47,7 @@ export default function Gallery() {
           >
             <a ref={ref} href="./images/image2.jpg">
               <img
+                loading="lazy"
                 className={`${styles.image} ${isVisible ? styles.visible : ""}`}
                 alt="img2"
                 src="./images/image2.jpg"

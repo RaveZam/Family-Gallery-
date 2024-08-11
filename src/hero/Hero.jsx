@@ -1,18 +1,13 @@
+import { forwardRef } from "react";
 import styles from "./hero.module.css";
-import { useInView } from "react-intersection-observer";
-import { animateScroll } from "react-scroll";
 
-export default function Hero() {
-  // const [ref, inView] = useInView({
-  //   threshold: 0,
-  // });
-  const options = {
-    // Your options here, for example:
-    duration: 500,
-    smooth: true,
-  };
+function Hero({ scrollToGallery }) {
+  const scrollPosition = window.innerHeight * 1.2;
   function toGallery() {
-    animateScroll.scrollTo(800, options);
+    window.scrollTo({
+      top: scrollPosition,
+      behavior: "smooth",
+    });
   }
   return (
     <div
@@ -27,7 +22,9 @@ export default function Hero() {
           journey.
         </p>
         <button
-          onClick={() => toGallery()}
+          onClick={() => {
+            scrollToGallery();
+          }}
           className={`${styles.btn} ${styles.btn1}`}
         >
           View Gallery
@@ -36,3 +33,5 @@ export default function Hero() {
     </div>
   );
 }
+
+export default forwardRef(Hero);
