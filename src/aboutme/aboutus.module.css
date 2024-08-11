@@ -1,0 +1,21 @@
+.aboutusmaincontainer {
+  width: 80%;
+  margin: 0 auto;
+  height: 120vh;
+  display: flex;
+}
+
+.aboutusimage {
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.5);
+}
+.aboutustextcontainer {
+}
+
+h1 {
+  flex: 1;
+}
+span {
+  width: 50%;
+}

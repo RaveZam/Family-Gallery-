@@ -31,11 +31,38 @@
 }
 
 .herotxt {
+  /* color: #423a3a; */
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.39);
+  transform: translateY(-50px);
+  opacity: 0.5;
 }
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px); /* Move the text upwards */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Move the text to its original position */
+  }
+}
+
+.showherotxt {
+  animation: slideDown 0.8s ease-out forwards;
+}
+
+.showspantxt {
+  opacity: 0;
+  animation: slideDown 0.8s ease-out forwards;
+  animation-delay: 400ms;
+}
+
 .herospan {
   margin-top: 4px;
   color: #ffffff;
-  text-shadow: 0 4px 6px rgb(0, 0, 0);
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.39);
+  opacity: 0;
 }
 .btn {
   color: #fff;
@@ -51,6 +78,9 @@
   transition: color 0.4s linear;
   z-index: -1;
   border-radius: 2px;
+  opacity: 0;
+  animation: slideDown 0.5s ease-out forwards;
+  animation-delay: 600ms;
 }
 
 .btn:hover {
@@ -68,7 +98,7 @@
   z-index: -1;
   transition: transform 0.5s;
   transform-origin: 0 0;
-  /* transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7); */
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
 }
 .btn1::before {
   transform: scaleX(0);

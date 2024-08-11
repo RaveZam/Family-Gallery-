@@ -5,6 +5,7 @@ import { useRef } from "react";
 // import Gallery from "./gallery/Gallery";
 const Gallery = lazy(() => import("./gallery/Gallery"));
 import Header from "./headercomponents/Header";
+import Aboutus from "./aboutme/Aboutus";
 
 function App() {
   const myComponentRef = useRef(null);
@@ -18,6 +19,7 @@ function App() {
     <div>
       <Header scrollToGallery={scrollToGallery} />
       <Hero scrollToGallery={scrollToGallery} />
+      {/* <Aboutus /> */}
       <Suspense>
         <div ref={myComponentRef}>
           <Gallery />
