@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div>
-      <Header />
+      <Header scrollToGallery={scrollToGallery} />
       <Hero scrollToGallery={scrollToGallery} />
       <Suspense>
         <div ref={myComponentRef}>
