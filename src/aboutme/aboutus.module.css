@@ -1,21 +1,106 @@
 .aboutusmaincontainer {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
   height: 120vh;
   display: flex;
+  margin-top: 10%;
+}
+
+.aboutustextcontainer {
+  padding: 20px;
+  height: 115vh;
+  width: 120%;
+  margin-left: 10%;
+}
+
+.aboutush1 {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+  padding-bottom: 2%;
+  font-size: 1.8vw;
+}
+span {
+  margin-top: 10%;
+  font-size: 1.8vw;
+  width: 70%;
+  text-align: center;
+}
+
+/* Images Component */
+
+.aboutusimagecontainer {
+  /* position: absolute; */
+  margin-left: 5%;
+  margin-top: 5%;
+  display: block;
+  padding-left: 10%;
+  flex: 1;
 }
 
 .aboutusimage {
-  width: 400px;
-  border-radius: 20px;
+  /* border-radius: 10px; */
+  transform: translateX(-60%) translateY(-25%);
   box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.5);
 }
-.aboutustextcontainer {
+.aboutusimage2 {
+  transform: translateX(-10%) translateY(-50%);
+  max-width: 100%;
+  /* border-radius: 10px; */
+  box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.5);
+}
+.aboutusimage3 {
+  transform: translateX(-50%) translateY(-80%);
+  width: 400px;
+  /* border-radius: 10px; */
+  box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.5);
+}
+.aboutusimage4 {
+  transform: translateX(23%) translateY(-130%);
+  width: 400px;
+  /* border-radius: 10px; */
+  box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.5);
+}
+.aboutusimage5 {
+  transform: translateX(-40%) translateY(-150%);
+  width: 400px;
+  /* border-radius: 10px; */
+  box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.5);
+}
+.overlaydiv {
+  display: flex;
+}
+.camera {
+  position: absolute;
+  max-width: 25%;
+  right: 0;
+  transform: translateY(-60%) rotate(10deg);
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
 }
 
-h1 {
-  flex: 1;
+.polaroids {
+  position: absolute;
+  max-width: 25%;
+  right: 10%;
+  margin-top: 5%;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
 }
-span {
-  width: 50%;
+
+.polaroids:hover {
+  transform: rotate(-2deg);
+}
+
+.camera:hover {
+  opacity: 1;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .aboutusimagecontainer {
+    display: none;
+  }
 }
