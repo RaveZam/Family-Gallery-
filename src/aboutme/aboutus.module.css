@@ -33,40 +33,28 @@ span {
 
 .aboutusimagecontainer {
   /* position: absolute; */
-  margin-left: 5%;
-  margin-top: 5%;
-  display: block;
-  padding-left: 10%;
-  flex: 1;
+  width: 100%;
+  transform: translateY(-5%);
 }
 
-.aboutusimage {
-  /* border-radius: 10px; */
-  transform: translateX(-60%) translateY(-25%);
-  box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.5);
-}
 .aboutusimage2 {
-  transform: translateX(-10%) translateY(-50%);
-  max-width: 100%;
-  /* border-radius: 10px; */
+  transform: translateX(70%) rotate(5deg);
+  max-width: 60%;
   box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.5);
 }
 .aboutusimage3 {
-  transform: translateX(-50%) translateY(-80%);
-  width: 400px;
-  /* border-radius: 10px; */
+  transform: translateX(15%) translateY(-40%) rotate(-5deg);
+  max-width: 60%;
   box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.5);
 }
 .aboutusimage4 {
-  transform: translateX(23%) translateY(-130%);
-  width: 400px;
-  /* border-radius: 10px; */
+  transform: translateX(70%) translateY(-70%) rotate(5deg);
+  max-width: 60%;
   box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.5);
 }
 .aboutusimage5 {
-  transform: translateX(-40%) translateY(-150%);
-  width: 400px;
-  /* border-radius: 10px; */
+  transform: translateX(15%) translateY(-105%) rotate(-5deg);
+  max-width: 60%;
   box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.5);
 }
 .overlaydiv {
@@ -97,6 +85,24 @@ span {
 .camera:hover {
   opacity: 1;
   padding-bottom: 20px;
+}
+
+.retro {
+  position: absolute;
+  max-width: 40%;
+  /* transform: translateX(80%) translateY(-50%) rotate(40deg); */
+  transform: translateY(-40%) rotate(40deg);
+  left: 26%;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.cross {
+  position: absolute;
+  max-width: 40%;
+  left: 22%;
+  transform: translateY(-50%) rotate(85deg) translateX(0);
+  z-index: 3;
 }
 
 @media (max-width: 768px) {

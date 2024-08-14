@@ -1,0 +1,24 @@
+.contactpage {
+  margin-top: 10%;
+  background-color: #fdf9f2f7;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.column1 {
+  text-align: center;
+  flex: 1;
+}
+
+.column2 {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.contacttxt {
+  padding-top: 20px;
+  margin-bottom: 10px;
+}

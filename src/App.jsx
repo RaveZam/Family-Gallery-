@@ -6,6 +6,7 @@ import { useRef } from "react";
 const Gallery = lazy(() => import("./gallery/Gallery"));
 import Header from "./headercomponents/Header";
 import Aboutus from "./aboutme/Aboutus";
+import Contact from "./contact/Contact";
 
 function App() {
   const myComponentRef = useRef(null);
@@ -26,6 +27,7 @@ function App() {
         </div>
         {/* ref={galleryRef} */}
       </Suspense>
+      <Contact />
     </div>
   );
 }

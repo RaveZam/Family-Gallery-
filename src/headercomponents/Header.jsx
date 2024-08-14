@@ -7,7 +7,7 @@ export default function Header({ scrollToGallery }) {
   return (
     <div className={styles.header}>
       <div className={styles.namecontainer}>
-        <h1 className={styles.name}>IVAN PINTO</h1>
+        <h1 className={styles.name}>OLTAS FILM</h1>
       </div>
       <Nav scrollToGallery={scrollToGallery} show={show} setShow={setShow} />
       <Mobilenav show={show} />
