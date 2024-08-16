@@ -1,7 +1,6 @@
-import { forwardRef } from "react";
 import styles from "./hero.module.css";
 
-function Hero({ scrollToGallery }) {
+export default function Hero({ scrollToGallery }) {
   return (
     <div
       className={styles.hero}
@@ -28,5 +27,3 @@ function Hero({ scrollToGallery }) {
     </div>
   );
 }
-
-export default forwardRef(Hero);

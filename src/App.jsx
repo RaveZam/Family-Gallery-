@@ -7,6 +7,7 @@ const Gallery = lazy(() => import("./gallery/Gallery"));
 import Header from "./headercomponents/Header";
 import Aboutus from "./aboutme/Aboutus";
 import Contact from "./contact/Contact";
+import Footer from "./footer/Footer";
 
 function App() {
   const myComponentRef = useRef(null);
@@ -28,6 +29,7 @@ function App() {
         {/* ref={galleryRef} */}
       </Suspense>
       <Contact />
+      <Footer />
     </div>
   );
 }

@@ -1,14 +1,25 @@
 import styles from "./aboutus.module.css";
+import { useInView } from "react-intersection-observer";
+
 import Aboutusimagecomponent from "./Aboutusimagecomponent";
 export default function Aboutus() {
+  const [aboutusref, AboutusIsVisible] = useInView({
+    threshold: 1,
+    // triggerOnce: true,
+  });
+
   return (
     <div className={styles.aboutusmaincontainer}>
-      <Aboutusimagecomponent />
+      <div className={styles.aboutusimagecontainer}>
+        <Aboutusimagecomponent />
+      </div>
       <div className={styles.overlaydiv}>
         <img className={styles.camera} src="/images/camera.png" alt="" />
       </div>
       <div className={styles.aboutustextcontainer}>
-        <h1 className={styles.aboutush1}>About Us </h1>
+        <h1 ref={aboutusref} className={styles.aboutush1}>
+          About Us
+        </h1>
         <span>
           Our family’s journey started in the vibrant Philippines, where we were
           shaped by rich traditions and deep cultural values. From the lively

@@ -4,9 +4,10 @@ export default function Contact() {
     <div className={styles.contactpage}>
       <div className={styles.column1}>
         <h1 className={styles.contacttxt}>Contact Us</h1>
-        <span className={styles.contactspan}>
-          Questions About Immigration or Photography?
-        </span>
+        <div className={styles.contactscontainer}>
+          <div className={styles.instagram}>@loremipsum</div>
+          <div className={styles.gmail}>@loremimsup@gmail.com</div>
+        </div>
       </div>
       <div
         className={styles.column2}

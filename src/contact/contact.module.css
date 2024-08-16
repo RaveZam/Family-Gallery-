@@ -22,3 +22,15 @@
   padding-top: 20px;
   margin-bottom: 10px;
 }
+
+.contactscontainer {
+  display: flex;
+}
+
+.instagram {
+  flex: 1;
+}
+
+.gmail {
+  flex: 1;
+}

@@ -1,6 +1,6 @@
 import styles from "./modules/nav.module.css";
 
-export default function Nav({ show, scrollToGallery }) {
+export default function Nav({ show, scrollToGallery, setShow }) {
   function burgerclick() {
     setShow(!show);
   }
