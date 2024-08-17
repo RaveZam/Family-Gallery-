@@ -5,6 +5,7 @@
   height: 50vh;
   display: flex;
   flex-direction: row;
+  /* background-color: rgb(162, 122, 77); */
 }
 
 .column1 {
