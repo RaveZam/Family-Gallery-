@@ -1,6 +1,6 @@
 .contactpage {
   margin-top: 10%;
-  background-color: #fdf9f2f7;
+  /* background-color: rgb(191, 165, 117); */
   width: 100%;
   height: 50vh;
   display: flex;
@@ -19,8 +19,13 @@
 }
 
 .contacttxt {
-  padding-top: 20px;
+  font-size: 5vw;
+  padding-top: 10px;
   margin-bottom: 10px;
+}
+
+.contacttextcontainer {
+  margin-bottom: 5%;
 }
 
 .contactscontainer {
@@ -31,6 +36,73 @@
   flex: 1;
 }
 
+.instabg {
+  margin: 0 auto;
+  max-width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
 .gmail {
   flex: 1;
+}
+
+.gmailbg {
+  margin: 0 auto;
+  max-width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.gmailimg {
+  max-width: 50%;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.gmailimg:hover {
+  transform: scale(1.1);
+}
+
+.insta {
+  max-width: 50%;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.insta:hover {
+  transform: scale(1.1);
+}
+
+.gmailspan {
+  transform: translateY(-100%);
+  font-size: 2vw;
+}
+
+.instaspan {
+  transform: translateY(-100%);
+  font-size: 2vw;
+}
+
+.contactspan {
+  font-size: 1.2vw;
+}
+
+.phone {
+  position: absolute;
+  max-width: 15%;
+  left: 35%;
+  transform: translateY(-120%) rotate(-10deg);
+}
+
+.contactimg1 {
+  max-width: 60%;
+  transform: translateX(50%) translateY(90%);
+  box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
