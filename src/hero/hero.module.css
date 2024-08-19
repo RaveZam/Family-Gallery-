@@ -18,11 +18,11 @@
 
 .herotxtcontainer {
   padding: 20px;
-  width: 500px;
+  width: 31%;
   height: 500px;
   z-index: 1;
   position: absolute;
-  font-size: 2rem;
+  font-size: 2vw;
   color: white;
   opacity: 0.9;
   text-align: left;
@@ -67,21 +67,21 @@
 }
 .btn {
   color: #fff;
-  font-size: large;
+  font-size: 1.3vw;
   font-family: inherit;
-  position: absolute;
   /* border: solid black 1px; */
   border: none;
   background-color: #8a2126ea;
-  padding: 20px 70px;
-  margin: 30px 0px;
-  cursor: pointer;
+  padding: 3%;
+  margin-top: 3%;
+  width: 50%;
   transition: color 0.4s linear;
   z-index: -1;
   border-radius: 2px;
   opacity: 0;
   animation: slideDown 0.5s ease-out forwards;
   animation-delay: 600ms;
+  white-space: nowrap;
 }
 
 .btn:hover {
@@ -112,15 +112,22 @@
 @media (max-width: 768px) {
   .herotxtcontainer {
     width: 70%;
-    font-size: 20px;
+    font-size: 6vw;
   }
 
+  .showherotxt {
+    margin-bottom: 3%;
+  }
+
+  .showspantxt {
+    color: rgb(255, 253, 253);
+  }
   .btn {
+    margin-top: 5%;
     width: 60%;
-    height: 40px;
+    height: 12%;
     white-space: nowrap;
-    padding: 0;
-    font-size: 1rem;
+    font-size: 5vw;
   }
 
   .hero {

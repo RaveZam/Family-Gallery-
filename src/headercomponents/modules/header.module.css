@@ -20,7 +20,8 @@
 }
 .name {
   animation: slideFromLeft 1s ease-out forwards;
-  font-size: 30px;
+  font-size: 2vw;
+  /* font-size: 30px; */
 }
 
 .namecontainer {

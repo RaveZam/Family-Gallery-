@@ -8,7 +8,6 @@ export default function Aboutusimagecomponent() {
 
   return (
     <div>
-      {console.log(isVisible)}
       <div className={styles.tapeoverlays}>
         {/* <img className={styles.retro} src="/images/retro.png" alt="" /> */}
       </div>

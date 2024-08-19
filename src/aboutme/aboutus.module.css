@@ -1,15 +1,13 @@
 .aboutusmaincontainer {
   width: 95%;
   margin: 0 auto;
-  height: 120vh;
+  /* height: 10%; */
   display: flex;
   margin-top: 10%;
   /* overflow-x: hidden; */
 }
 
 .aboutustextcontainer {
-  /* padding: 20px; */
-  height: 115vh;
   width: 120%;
   margin-left: 10%;
 }
@@ -154,7 +152,6 @@ span {
     margin: 0 auto;
     width: 100%;
     margin-left: 0%;
-    height: 100vh;
     transform: translateY(-20%);
   }
 

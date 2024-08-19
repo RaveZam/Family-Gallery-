@@ -19,7 +19,10 @@ export default function Contact() {
               <span className={styles.instaspan}>
                 <em>@jushivan </em>
               </span>
-              <button className={`${styles.btn} ${styles.btn1}`} type="button">
+              <button
+                className={`${styles.btn} ${styles.btn1} ${styles.instabtn}`}
+                type="button"
+              >
                 Contact
               </button>
             </div>
@@ -35,7 +38,10 @@ export default function Contact() {
               <span className={styles.gmailspan}>
                 <em>olatsfilm@gmail.com </em>
               </span>
-              <button className={`${styles.btn} ${styles.btn1}`} type="button">
+              <button
+                className={`${styles.btn} ${styles.btn1} ${styles.gmailbtn}`}
+                type="button"
+              >
                 Contact
               </button>
             </div>

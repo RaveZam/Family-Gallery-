@@ -1,6 +1,5 @@
 .footer {
   max-width: 100%;
-  height: 10vh;
   border: 0.5px solid rgba(0, 0, 0, 0.216);
   box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.2);
   z-index: 5;
@@ -12,12 +11,16 @@
   width: 50%;
   display: flex;
   list-style: none;
-  height: 10vh;
+  height: 100%;
 }
 
 .footerli {
-  margin-left: 20px;
-  margin-top: 20px;
+  margin: 2.5%;
   font-size: 1.2vw;
-  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.footerli:hover {
+  transform: translateX(4px);
+  cursor: pointer;
 }

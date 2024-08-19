@@ -27,15 +27,14 @@
 
 .li {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 1.5vw;
   padding: 5px;
   margin-left: 20px;
   opacity: 0;
-
   animation: slideFromRight 0.5s ease-out forwards;
-  transition: all 0.4s ease-in-out;
 }
 .li:hover {
+  transition: 0.4s ease-out;
   transform: translateY(-6px);
   cursor: pointer;
   border-bottom: solid rgba(70, 63, 63, 0.403) 2px;

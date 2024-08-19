@@ -1,6 +1,12 @@
 import styles from "./modules/nav.module.css";
 
-export default function Nav({ show, scrollToGallery, setShow }) {
+export default function Nav({
+  show,
+  scrollToGallery,
+  setShow,
+  scrollToContact,
+  scrollToAbout,
+}) {
   function burgerclick() {
     setShow(!show);
   }
@@ -11,8 +17,12 @@ export default function Nav({ show, scrollToGallery, setShow }) {
         <li onClick={() => scrollToGallery()} className={styles.li}>
           Gallery
         </li>
-        <li className={styles.li}>Contact</li>
-        <li className={styles.li}>About Us</li>
+        <li onClick={() => scrollToContact()} className={styles.li}>
+          Contact
+        </li>
+        <li onClick={() => scrollToAbout()} className={styles.li}>
+          About Us
+        </li>
       </ul>
       <img
         onClick={() => burgerclick()}
