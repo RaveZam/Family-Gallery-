@@ -8,6 +8,22 @@
   box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.2);
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    transparent 30%,
+    rgba(0, 0, 0, 0.107) 70%
+  );
+
+  pointer-events: none; /* Ensures the overlay doesn't block interactions */
+}
+
 .herobg {
   margin-top: -5%;
   width: 100%;
@@ -23,19 +39,12 @@
   z-index: 1;
   position: absolute;
   font-size: 2vw;
-  color: white;
+  color: #ffffff; /* Slightly darker light text */
   opacity: 0.9;
   text-align: left;
   top: 20%;
   left: 5%;
   border-radius: 20px;
-}
-
-.herotxt {
-  /* color: #423a3a; */
-  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.39);
-  transform: translateY(-50px);
-  opacity: 0.5;
 }
 
 @keyframes slideDown {
@@ -57,14 +66,9 @@
   opacity: 0;
   animation: slideDown 0.8s ease-out forwards;
   animation-delay: 400ms;
+  margin-top: 2px;
 }
 
-.herospan {
-  margin-top: 4px;
-  color: #ffffff;
-  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.39);
-  opacity: 0;
-}
 .btn {
   color: #fff;
   font-size: 1.3vw;
@@ -73,7 +77,7 @@
   border: none;
   background-color: #8a2126ea;
   padding: 3%;
-  margin-top: 3%;
+  margin-top: 5%;
   width: 50%;
   transition: color 0.4s linear;
   z-index: -1;
@@ -108,11 +112,15 @@
 .btn1:hover::before {
   transform: scaleX(1);
 }
+.mobilespan {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .herotxtcontainer {
     width: 70%;
     font-size: 6vw;
+    /* left: 9%; */
   }
 
   .showherotxt {
@@ -120,7 +128,13 @@
   }
 
   .showspantxt {
-    color: rgb(255, 253, 253);
+    font-size: 7vw;
+    font-weight: 500;
+    color: rgb(255, 255, 255); /* Slightly darker light text */
+    display: none;
+  }
+  .mobilespan {
+    display: block;
   }
   .btn {
     margin-top: 5%;
@@ -132,5 +146,9 @@
 
   .hero {
     background-position: 20%;
+  }
+
+  .hero::before {
+    /* background-color: rgba(0, 0, 0, 0.074); Adjust the opacity as needed */
   }
 }

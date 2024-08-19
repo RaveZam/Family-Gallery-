@@ -10,5 +10,6 @@ body {
   overflow-x: hidden;
   font-family: Inter;
   scroll-behavior: smooth;
+  /* background-color: #fff5ed; */
   background-color: #fff5ed;
 }

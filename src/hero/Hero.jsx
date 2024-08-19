@@ -15,6 +15,10 @@ export default function Hero({ scrollToGallery }) {
           everyday adventures, our gallery captures the essence of our family's
           journey.
         </p>
+        <p className={styles.mobilespan}>
+          Explore the moments that define us. From travels to everyday
+          adventures, our gallery captures the essence of our family.
+        </p>
         <button
           onClick={() => {
             scrollToGallery();
