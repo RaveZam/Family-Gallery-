@@ -20,7 +20,7 @@ export default function Header({
         show={show}
         setShow={setShow}
       />
-      <Mobilenav show={show} />
+      <Mobilenav show={show} setShow={setShow} />
     </div>
   );
 }
