@@ -2,12 +2,12 @@ import { useState } from "react";
 import styles from "./modules/mobilenav.module.css";
 
 export default function Mobilenav({ show, setShow }) {
-  const [close, setClose] = useState();
+  const [close, setClose] = useState(false);
   // let showdiv = show ? styles.show : "";
 
   function closeBtn() {
     setShow(!show);
-    setClose(true);
+    setClose(!close);
   }
 
   return (
@@ -16,13 +16,26 @@ export default function Mobilenav({ show, setShow }) {
         close ? styles.close : ""
       }`}
     >
+      <div className={styles.mobnamecontainer}>
+        <h1 className={styles.mobname}>OLATS FILM</h1>
+      </div>
       <div className={styles.linkscontainer}>
         <ul className={styles.ul}>
-          <li className={styles.li}>Gallery </li>
-          <li className={styles.li}>Contact</li>
-          <li className={styles.li}>About Me</li>
+          <li className={styles.li}>
+            <img className={styles.icons} src="./images/photo.png" alt="" />
+            Gallery
+          </li>
+          <li className={styles.li}>
+            <img className={styles.icons} src="./images/user.png" alt="" />
+            Contact
+          </li>
+          <li className={styles.li}>
+            <img className={styles.icons} src="./images/info.png" alt="" />
+            About Us
+          </li>
           <li onClick={() => closeBtn()} className={styles.li}>
-            X
+            <img className={styles.icons} src="./images/close.png" alt="" />
+            Close
           </li>
         </ul>
       </div>
