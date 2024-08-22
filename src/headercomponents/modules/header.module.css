@@ -6,7 +6,6 @@
   /* box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.097); */
   position: absolute;
   top: 0;
-  z-index: 100;
 }
 @keyframes slideFromLeft {
   0% {
@@ -18,7 +17,7 @@
     transform: translateX(0);
   }
 }
-.name {
+.mobname {
   animation: slideFromLeft 1s ease-out forwards;
   font-size: 2vw;
   /* font-size: 30px; */

@@ -1,7 +1,6 @@
 .mobnav {
   display: none;
   position: absolute;
-  /* background-color: #fff9f0; */
   color: rgb(0, 0, 0);
   width: 99.7%;
   box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.2);
@@ -11,6 +10,7 @@
   backdrop-filter: blur(10px); /* Frosted glass effect */
   -webkit-backdrop-filter: blur(10px); /* Safari support */
   border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+  z-index: 100;
 }
 
 .mobname {
@@ -32,24 +32,49 @@
 .ul {
   text-align: left;
   list-style-type: none;
-  margin-left: 5%;
+  margin-left: 10%;
   margin-bottom: 10%;
 }
 
 .icons {
-  max-width: 30%;
+  max-width: 25%;
   margin-left: -20%;
   margin-right: 8%;
   transform: translateY(25%);
 }
 
 .li {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin: 15px;
   padding-bottom: 10px;
-  /* border-bottom: solid rgba(0, 0, 0, 0.656) 1px; */
   width: 80%;
   white-space: nowrap;
+  margin-left: -50%;
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
+  filter: blur(5px);
+}
+.slide {
+  opacity: 1;
+  margin-left: 10%;
+  filter: blur(0px);
+}
+
+.li:nth-child(3) {
+  transition-delay: 100ms;
+}
+.li:nth-child(2) {
+  transition-delay: 200ms;
+}
+.li:nth-child(1) {
+  transition-delay: 300ms;
+}
+.li:first-child {
+  transition-delay: 300ms;
+}
+
+.mobname {
+  left: -100%;
 }
 
 .li:last-child {
@@ -60,9 +85,10 @@
 
 .linkscontainer {
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
   height: 100%;
   text-align: center;
+  /* overflow: hidden; */
 }
 
 @media (max-width: 768px) {
