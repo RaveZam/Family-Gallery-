@@ -15,7 +15,9 @@ function App() {
   const myAboutusRef = useRef(null);
 
   const scrollToGallery = () => {
-    myComponentRef.current.scrollIntoView({ behavior: "smooth" });
+    myComponentRef.current.scrollIntoView({
+      behavior: "smooth",
+    });
   };
 
   const scrollToContact = () => {
@@ -38,6 +40,8 @@ function App() {
       />
       <Hero scrollToGallery={scrollToGallery} />
       <div ref={myAboutusRef}>
+        <br />
+
         <Aboutus />
       </div>
       <Suspense>

@@ -17,52 +17,52 @@ export default function Gallery() {
 
   const [ref, isVisible] = useInView({
     threshold: 1,
-    // rootMargin: "300px",
+    rootMargin: "250px",
     triggerOnce: true,
   });
   const [ref2, isVisible2] = useInView({
     threshold: 1,
-    // rootMargin: "400px",
+    rootMargin: "250px",
     triggerOnce: true,
   });
   const [ref3, isVisible3] = useInView({
     threshold: 1,
-    // rootMargin: "400px",
+    rootMargin: "250px",
     triggerOnce: true,
   });
   const [ref4, isVisible4] = useInView({
     threshold: 1,
-    // rootMargin: "400px",
+    rootMargin: "250px",
     triggerOnce: true,
   });
   const [ref5, isVisible5] = useInView({
     threshold: 1,
-    // rootMargin: "400px",
+    rootMargin: "250px",
     triggerOnce: true,
   });
   const [ref6, isVisible6] = useInView({
     threshold: 1,
-    // rootMargin: "400px",
+    rootMargin: "250px",
     triggerOnce: true,
   });
   const [ref7, isVisible7] = useInView({
     threshold: 1,
-    // rootMargin: "400px",
+    rootMargin: "250px",
     triggerOnce: true,
   });
   const [ref8, isVisible8] = useInView({
     threshold: 1,
-    // rootMargin: "400px",
+    rootMargin: "250px",
     triggerOnce: true,
   });
   const [ref9, isVisible9] = useInView({
     threshold: 1,
-    // rootMargin: "400px",
+    rootMargin: "250px",
     triggerOnce: true,
   });
   const [ref10, isVisible10] = useInView({
     threshold: 1,
-    // rootMargin: "400px",
+    rootMargin: "200px",
     triggerOnce: true,
   });
 
