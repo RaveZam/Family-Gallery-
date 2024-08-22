@@ -41,7 +41,6 @@ function App() {
       <Hero scrollToGallery={scrollToGallery} />
       <div ref={myAboutusRef}>
         <br />
-
         <Aboutus />
       </div>
       <Suspense>
