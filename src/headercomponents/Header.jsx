@@ -20,7 +20,13 @@ export default function Header({
         show={show}
         setShow={setShow}
       />
-      <Mobilenav show={show} setShow={setShow} />
+      <Mobilenav
+        scrollToGallery={scrollToGallery}
+        scrollToContact={scrollToContact}
+        scrollToAbout={scrollToAbout}
+        show={show}
+        setShow={setShow}
+      />
     </div>
   );
 }

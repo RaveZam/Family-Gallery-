@@ -35,6 +35,36 @@ export default function Gallery() {
     // rootMargin: "400px",
     triggerOnce: true,
   });
+  const [ref5, isVisible5] = useInView({
+    threshold: 1,
+    // rootMargin: "400px",
+    triggerOnce: true,
+  });
+  const [ref6, isVisible6] = useInView({
+    threshold: 1,
+    // rootMargin: "400px",
+    triggerOnce: true,
+  });
+  const [ref7, isVisible7] = useInView({
+    threshold: 1,
+    // rootMargin: "400px",
+    triggerOnce: true,
+  });
+  const [ref8, isVisible8] = useInView({
+    threshold: 1,
+    // rootMargin: "400px",
+    triggerOnce: true,
+  });
+  const [ref9, isVisible9] = useInView({
+    threshold: 1,
+    // rootMargin: "400px",
+    triggerOnce: true,
+  });
+  const [ref10, isVisible10] = useInView({
+    threshold: 1,
+    // rootMargin: "400px",
+    triggerOnce: true,
+  });
 
   return (
     <div className={styles.app}>
@@ -76,10 +106,64 @@ export default function Gallery() {
                 className={`${styles.image} ${
                   isVisible4 ? styles.visible : ""
                 }`}
-                alt="img8"
-                src="./images/image8.jpg"
+                alt="img13"
+                src="./images/image13.jpg"
               />
             </a>
+            <a ref={ref5} href="./images/image4.jpg">
+              <img
+                className={`${styles.image} ${
+                  isVisible5 ? styles.visible : ""
+                }`}
+                alt="img14"
+                src="./images/image14.jpg"
+              />
+            </a>
+            <a ref={ref6} href="./images/image20.jpg">
+              <img
+                className={`${styles.image} ${
+                  isVisible6 ? styles.visible : ""
+                }`}
+                alt="img20"
+                src="./images/image20.jpg"
+              />
+            </a>
+            <a ref={ref7} href="./images/image23.JPG">
+              <img
+                className={`${styles.image} ${
+                  isVisible7 ? styles.visible : ""
+                }`}
+                alt="img23"
+                src="./images/image23.JPG"
+              />
+            </a>
+            <a ref={ref8} href="./images/image26.JPG">
+              <img
+                className={`${styles.image} ${
+                  isVisible8 ? styles.visible : ""
+                }`}
+                alt="img26"
+                src="./images/image26.JPG"
+              />
+            </a>
+            <a ref={ref9} href="./images/image29.JPG">
+              <img
+                className={`${styles.image} ${
+                  isVisible9 ? styles.visible : ""
+                }`}
+                alt="img29"
+                src="./images/image29.JPG"
+              />
+            </a>
+            {/* <a ref={ref10} href="./images/image32.JPG">
+              <img
+                className={`${styles.image} ${
+                  isVisible10 ? styles.visible : ""
+                }`}
+                alt="img32"
+                src="./images/image32.JPG"
+              />
+            </a> */}
           </LightGallery>
         </div>
         <div className={styles.column}>
@@ -125,6 +209,51 @@ export default function Gallery() {
                 src="./images/image4.jpg"
               />
             </a>
+            <a href="./images/image14.jpg">
+              <img
+                className={`${styles.image} ${
+                  isVisible5 ? styles.visible : ""
+                } ${styles.img4}`}
+                alt="img17"
+                src="./images/image17.jpg"
+              />
+            </a>
+            <a href="./images/image21.jpg">
+              <img
+                className={`${styles.image} ${
+                  isVisible6 ? styles.visible : ""
+                } ${styles.img4}`}
+                alt="img17"
+                src="./images/image21.jpg"
+              />
+            </a>
+            <a href="./images/image24.JPG">
+              <img
+                className={`${styles.image} ${
+                  isVisible7 ? styles.visible : ""
+                } ${styles.img4}`}
+                alt="img24"
+                src="./images/image24.JPG"
+              />
+            </a>
+            <a href="./images/image27.JPG">
+              <img
+                className={`${styles.image} ${
+                  isVisible8 ? styles.visible : ""
+                } ${styles.img4}`}
+                alt="img27"
+                src="./images/image27.JPG"
+              />
+            </a>
+            <a href="./images/image30.JPG">
+              <img
+                className={`${styles.image} ${
+                  isVisible9 ? styles.visible : ""
+                } ${styles.img4}`}
+                alt="img30"
+                src="./images/image30.JPG"
+              />
+            </a>
           </LightGallery>
         </div>
         <div className={styles.column}>
@@ -160,13 +289,58 @@ export default function Gallery() {
                 src="./images/image10.jpg"
               />
             </a>
-            <a href="./images/image7.jpg">
+            <a href="./images/image11.jpg">
               <img
                 className={`${styles.image} ${
                   isVisible4 ? styles.visible : ""
                 } ${styles.img7}`}
-                alt="img7"
-                src="./images/image7.jpg"
+                alt="img11"
+                src="./images/image12.jpg"
+              />
+            </a>
+            <a href="./images/image19.jpg">
+              <img
+                className={`${styles.image} ${
+                  isVisible5 ? styles.visible : ""
+                } ${styles.img7}`}
+                alt="img19"
+                src="./images/image19.jpg"
+              />
+            </a>
+            <a href="./images/image22.jpg">
+              <img
+                className={`${styles.image} ${
+                  isVisible6 ? styles.visible : ""
+                } ${styles.img7}`}
+                alt="img22"
+                src="./images/image22.jpg"
+              />
+            </a>
+            <a href="./images/image25.JPG">
+              <img
+                className={`${styles.image} ${
+                  isVisible7 ? styles.visible : ""
+                } ${styles.img7}`}
+                alt="img25"
+                src="./images/image25.JPG"
+              />
+            </a>
+            <a href="./images/image28.JPG">
+              <img
+                className={`${styles.image} ${
+                  isVisible8 ? styles.visible : ""
+                } ${styles.img7}`}
+                alt="img28"
+                src="./images/image28.JPG"
+              />
+            </a>
+            <a href="./images/image32.JPG">
+              <img
+                className={`${styles.image} ${
+                  isVisible9 ? styles.visible : ""
+                } ${styles.img7}`}
+                alt="img32"
+                src="./images/image32.JPG"
               />
             </a>
           </LightGallery>

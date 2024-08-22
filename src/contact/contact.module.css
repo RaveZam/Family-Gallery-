@@ -123,15 +123,16 @@
   transition: color 0.4s linear;
   z-index: 1;
   border-radius: 2px;
+  /* margin-right: 100%; */
 }
 
 .instabtn {
   transform: translateY(-100%);
-  width: 65%;
+  width: 105%;
 }
 
 .gmailbtn {
-  width: 65%;
+  width: 105%;
   transform: translateY(-75%);
 }
 
@@ -200,7 +201,7 @@
   }
 
   .gmailbtn {
-    width: 65%;
+    width: 105%;
     transform: translateY(-38%);
   }
 

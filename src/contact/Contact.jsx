@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import styles from "./contact.module.css";
 export default function Contact() {
   return (
@@ -19,12 +20,17 @@ export default function Contact() {
               <span className={styles.instaspan}>
                 <em>@jushivan </em>
               </span>
-              <button
-                className={`${styles.btn} ${styles.btn1} ${styles.instabtn}`}
-                type="button"
+              <a
+                target="blank"
+                href="https://www.instagram.com/jushivan/?hl=en"
               >
-                Contact
-              </button>
+                <button
+                  className={`${styles.btn} ${styles.btn1} ${styles.instabtn}`}
+                  type="button"
+                >
+                  Contact
+                </button>
+              </a>
             </div>
           </div>
           <div className={styles.gmail}>
@@ -38,12 +44,17 @@ export default function Contact() {
               <span className={styles.gmailspan}>
                 <em>olatsfilm@gmail.com </em>
               </span>
-              <button
-                className={`${styles.btn} ${styles.btn1} ${styles.gmailbtn}`}
-                type="button"
+              <a
+                target="blank"
+                href="https://mail.google.com/mail/u/0/#inbox?compose=new"
               >
-                Contact
-              </button>
+                <button
+                  className={`${styles.btn} ${styles.btn1} ${styles.gmailbtn}`}
+                  type="button"
+                >
+                  Contact
+                </button>
+              </a>
             </div>
           </div>
         </div>
