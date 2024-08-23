@@ -8,6 +8,7 @@ import Header from "./headercomponents/Header";
 import Aboutus from "./aboutme/Aboutus";
 import Contact from "./contact/Contact";
 import Footer from "./footer/Footer";
+import ScrolltoTop from "./scrolltotop/ScrolltoTop";
 
 function App() {
   const myComponentRef = useRef(null);
@@ -33,11 +34,13 @@ function App() {
 
   return (
     <div>
+      <ScrolltoTop />
       <Header
         scrollToGallery={scrollToGallery}
         scrollToContact={scrollToContact}
         scrollToAbout={scrollToAbout}
       />
+
       <Hero scrollToGallery={scrollToGallery} />
       <div ref={myAboutusRef}>
         <br />
@@ -52,11 +55,13 @@ function App() {
       <div ref={myContactRef}>
         <Contact />
       </div>
+
       <Footer
         scrollToGallery={scrollToGallery}
         scrollToContact={scrollToContact}
         scrollToAbout={scrollToAbout}
       />
+      <div></div>
     </div>
   );
 }
