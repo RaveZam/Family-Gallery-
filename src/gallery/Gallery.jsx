@@ -88,7 +88,7 @@ export default function Gallery() {
                   isVisible2 ? styles.visible : ""
                 }`}
                 alt="img1"
-                src="./images/image1.jpg"
+                src="./images/image1.png"
               />
             </a>
             <a ref={ref3} href="./images/image7.jpg">
@@ -180,13 +180,13 @@ export default function Gallery() {
                 src="./images/image6.jpg"
               />
             </a>
-            <a href="./images/image3.jpg">
+            <a href="./images/image3.png">
               <img
                 className={`${styles.image} ${
                   isVisible3 ? styles.visible : ""
                 } ${styles.img3}`}
                 alt="img3"
-                src="./images/image3.jpg"
+                src="./images/image3.png"
               />
             </a>
 
