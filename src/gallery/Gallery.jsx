@@ -82,7 +82,7 @@ export default function Gallery() {
                 src="./images/image2.jpg"
               />
             </a>
-            <a ref={ref2} href="./images/image1.jpg">
+            <a ref={ref2} href="./images/image1.png">
               <img
                 className={`${styles.image} ${
                   isVisible2 ? styles.visible : ""
