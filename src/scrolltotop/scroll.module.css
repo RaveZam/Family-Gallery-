@@ -18,3 +18,14 @@
   padding-left: 13px;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .circleimg {
+    max-width: 10%;
+  }
+  .circlecontainer {
+    opacity: 0.5;
+    transform: translateX(78%);
+    margin-bottom: 40px;
+  }
+}
