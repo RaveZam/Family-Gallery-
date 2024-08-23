@@ -154,15 +154,6 @@ export default function Gallery() {
                 src="./images/image29.JPG"
               />
             </a>
-            {/* <a ref={ref10} href="./images/image32.JPG">
-              <img
-                className={`${styles.image} ${
-                  isVisible10 ? styles.visible : ""
-                }`}
-                alt="img32"
-                src="./images/image32.JPG"
-              />
-            </a> */}
           </LightGallery>
         </div>
         <div className={styles.column}>

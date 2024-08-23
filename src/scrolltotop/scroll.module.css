@@ -1,6 +1,7 @@
 .circlecontainer {
   /* position: absolute; */
   position: fixed;
+  position: -webkit-sticky;
   z-index: 10;
   bottom: 0;
   right: 0;
@@ -17,7 +18,4 @@
   padding: 10px;
   padding-left: 13px;
   cursor: pointer;
-}
-
-.circlea {
 }

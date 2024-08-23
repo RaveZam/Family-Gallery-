@@ -46,12 +46,11 @@ function App() {
         <br />
         <Aboutus />
       </div>
-      <Suspense>
-        <div ref={myComponentRef}>
-          <Gallery />
-        </div>
-        {/* ref={galleryRef} */}
-      </Suspense>
+      {/* <Suspense> */}
+      <div ref={myComponentRef}>
+        <Gallery />
+      </div>
+      {/* </Suspense> */}
       <div ref={myContactRef}>
         <Contact />
       </div>
