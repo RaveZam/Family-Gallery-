@@ -17,7 +17,7 @@ export default function Gallery() {
 
   const [ref, isVisible] = useInView({
     threshold: 1,
-    rootMargin: "250px",
+    // rootMargin: "250px",
     triggerOnce: true,
   });
   const [ref2, isVisible2] = useInView({
