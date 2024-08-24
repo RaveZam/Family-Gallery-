@@ -6,10 +6,10 @@ export default function Contact() {
       <div className={styles.column1}>
         <div className={styles.contacttextcontainer}>
           <h1 className={styles.contacttxt}>Contact Us</h1>
-          <span className={styles.contactspan}>
+          {/* <span className={styles.contactspan}>
             Questions about <em>immigration </em>
             and <em> photography?</em> Contact us below with:
-          </span>
+          </span> */}
         </div>
         <div className={styles.contactscontainer}>
           {/* <img className={styles.phone} src="./images/phone.png" alt="" /> */}
