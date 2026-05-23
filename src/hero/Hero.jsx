@@ -1,11 +1,25 @@
+import { useState, useEffect } from "react";
 import styles from "./hero.module.css";
 
+const BG_URL =
+  "https://res.cloudinary.com/dungl1ylq/image/upload/v1779523026/image9_egkz0j.jpg";
+
 export default function Hero({ scrollToGallery }) {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = BG_URL;
+    img.onload = () => setLoaded(true);
+    img.onerror = () => setLoaded(true); // don't hang forever on error
+  }, []);
+
   return (
     <div
       className={styles.hero}
-      style={{ backgroundImage: `url('./images/image9.jpg')` }}
+      style={{ backgroundImage: `url('${BG_URL}')` }}
     >
+      <div className={`${styles.loadingOverlay} ${loaded ? styles.overlayHidden : ""}`} />
       <div className={styles.herotxtcontainer}>
         <h1 className={styles.showherotxt}>
           A Journey Through Our Life in Photos

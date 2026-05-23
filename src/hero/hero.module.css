@@ -1,3 +1,17 @@
+.loadingOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: #111;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.overlayHidden {
+  opacity: 0;
+}
+
 .hero {
   /* background-image: url(./images/image9.jpg); */
   width: 100%;
